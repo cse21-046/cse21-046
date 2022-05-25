@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <title>NewWORLDTheaters</title>
+</head>
+
+<style>
+body{
+background-color: #FDF5DF;
+padding: 0;
+margin: 0;
+position: relative;
+box-sizing: border-box;
+}
+.logo{
+color: white;
+}
+.navigation{
+width: 100%;
+background-color: black;
+height: 80px
+}
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+position: absolute;
+}
+ul li{
+float: right;
+margin-top: 20px;
+}
+ul li a{
+width: 150px;
+display: block;
+text-decoration: none;
+font-size: 20px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+}
+a:hover{
+background-color: white;
+}
+ul li ul{
+background-color: black;
+display: none;
+}
+ul li:hover ul{
+display: block;
+}
+ul li ul li{
+float: none;
+}
+.slider{
+width: 800px;
+height: 800px;
+border-radius: 10px;
+overflow: hidden;
+margin: 10px;
+position: absolute;
+left: 20%;
+}
+.slides{
+width: 800%;
+height: 500px;
+display: flex;
+}
+.slides input{
+display: none;
+}
+.slide{
+width: 20%;
+transition: 2s;
+}
+.slide img{
+width: 800px;
+height: 800px;
+}
+.manu-nav{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+.manual-btn{
+border: 2px solid white;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+.manual-btn:hover{
+background-color: white;
+}
+#radio1:checked ~ .first{
+margin-left: 0%;
+}
+#radio2:checked ~ .first{
+margin-left: -20%;
+}
+#radio3:checked ~ .first{
+margin-left: -40%;
+}
+#radio4:checked ~ .first{
+margin-left: -60%;
+}
+.auto-nav{
+position: absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+}
+.auto-nav div{
+border: 2px solid white;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+.auto-nav div:not(:last-child){
+margin-right: 40px;
+}
+#radio1:checked ~ .auto-nav .auto-bnt1{
+background-color: white;
+}
+#radio2:checked ~ .auto-nav .auto-bnt2{
+background-color: white;
+}
+#radio3:checked ~ .auto-nav .auto-bnt3{
+background-color: white;
+}
+#radio4:checked ~ .auto-nav .auto-bnt4{
+background-color: white;
+}
+.header{
+position: absolute;
+top: 930px;
+left: 550px;
+font-weight: bold;
+font-size: 50px;
+}
+.column{
+float: left;
+width: 33.33%;
+padding: 5px;
+position: absolute;
+top: 1000px;
+}
+.row ::after{
+content: "";
+display: table;
+clear: both;
+
+}
+.column img{
+height: 500px;
+width: 300px;
+position: absolute;
+top: 2px;
+left: 500px;
+
+}
+.container img{
+position: absolute;
+top: 1000px;
+left: 950px;
+height: 500px;
+width: 300px;
+
+}
+.image img{
+position: absolute;
+top: 1000px;
+left: 50px;
+height: 500px;
+width: 300px;
+
+}
+h1{
+color: black;
+position: absolute;
+top: 1490px;
+left: 1070px;
+}
+h2{
+color: black;
+position: absolute;
+top: 485px;
+left: 600px;
+font-size: 30px;
+}
+h3{
+color: black;
+position: absolute;
+top: 1480px;
+left: 150px;
+font-size: 30px;
+}
+footer{
+position: absolute;
+top: 1700px;
+left: px;
+background: black;
+color: white;
+width: 100%
+
+}
+</style>
+
+<body>
+<div class="navigation">
+         <header>
+		 
+		 <nav>
+		 
+		 <div class="logo">NewWORLDTHEATRE</div>
+		 <ul>
+         <li><a href="#">FEEDBACK</a></li>
+         <li><a href="#">CONTACT</a></li>
+         <li><a href="#">TICKETS</a></li>
+         <li><a href="#">GENRES</a>
+		  <ul>
+		 <li><a href="#">ACTION</a></li>
+		 <li><a href="#">BIOGRAPHY</a></li>
+		 <li><a href="#">COMEDY</a></li>
+		 <li><a href="#">HORROR</a></li>
+		 <li><a href="#">SCI-FI</a></li>
+		 <li><a href="#">DOCUMENTARY</a>
+		 </ul>
+		 </li>
+		 </ul>
+		 
+		 </nav>
+		 
+		 </header>
+</div>
+
+<div class="slider">
+<div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+		  <input type="radio" name="radio-btn" id="radio2">
+		  <input type="radio" name="radio-btn" id="radio3">
+		  <input type="radio" name="radio-btn" id="radio4">
+		  
+		          <div class="first slide">
+				  <img src="C:\Users\cse21-046\Downloads\dune.jpg" alt="load fail">
+				  </div>
+				  
+				  <div class="slide">
+				  <img src="C:\Users\cse21-046\Downloads\overlord-movie-poster.jpg" alt="load fail">
+				  
+				  </div>
+				  
+				  <div class="slide">
+				  <img src="C:\Users\cse21-046\Downloads\the-hangover-movie-poster.jpg" alt="load fail">
+				  </div>
+				  
+				  <div class="slide">
+				  <img src="C:\Users\cse21-046\Downloads\morbius-movie-poster.jpg" alt="load fail">
+				  </div>
+				  
+				  
+				  <div class="auto-nav">
+				  <div class="auto-btn1"></div>
+				  <div class="auto-btn2"></div>
+				  <div class="auto-btn3"></div>
+				  <div class="auto-btn4"></div>
+				  </div>
+
+
+
+</div>
+
+                 <div class="manu-nav">
+				 <label for="radio1" class="manual-btn"></label>
+				 <label for="radio2" class="manual-btn"></label>
+				 <label for="radio3" class="manual-btn"></label>
+				 <label for="radio4" class="manual-btn"></label>
+				 </div>
+
+</div>
+     <script type="text/javascript">
+	 var counter = 1;
+	 setInterval(function(){
+	      document.getElementById('radio' + counter).checked = true;
+		  counter++;
+		  if(counter > 4){
+		      counter = 1;
+			 }
+           }, 5000);
+      		   </script>
+			   
+
+		
+		
+		
+		
+		<div class="header">Now Showing</div>	   
+		<div class="row">
+		<div class="column">
+		     <img src="C:\Users\cse21-046\Downloads\xl_10872600_c809b67f.jpg" width="100%;" alt="">
+			 <h2>INFO</h2>
+			 </div>
+			 <div class="container">
+		     <img src="C:\Users\cse21-046\Downloads\annabelle-movie-poster.jpg" width="100%;" alt="">
+			 <h3>INFO<h3>
+			 </div>
+			 <div class="image">
+		     <img src="C:\Users\cse21-046\Downloads\free-guy-movie-poster.jpg" width="100%;" alt="">
+			 <h1>INFO</h1>
+			 </div>
+		
+		</div>	
+
+
+</body>
+
+      <footer>
+
+         New World Theatre<br>Private bag 12345</br>email: theatre@gmail.com
+
+       </footer>		
+
+
+
+
+
+
+
+
+
+</html>
